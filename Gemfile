@@ -71,5 +71,5 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'stimulus_reflex', path: '~/Development/stimulus_reflex'
-gem 'cable_ready', path: '~/Development/cable_ready'
+gem 'stimulus_reflex', '3.5.0.pre9'
+gem 'cable_ready', '5.0.0.pre9'

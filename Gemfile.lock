@@ -1,29 +1,3 @@
-PATH
-  remote: ../cable_ready
-  specs:
-    cable_ready (5.0.0.pre8)
-      actioncable (>= 5.2)
-      actionpack (>= 5.2)
-      actionview (>= 5.2)
-      activerecord (>= 5.2)
-      activesupport (>= 5.2)
-      railties (>= 5.2)
-      thread-local (>= 1.1.0)
-
-PATH
-  remote: ../stimulus_reflex
-  specs:
-    stimulus_reflex (3.5.0.pre8)
-      actioncable (>= 5.2)
-      actionpack (>= 5.2)
-      actionview (>= 5.2)
-      activesupport (>= 5.2)
-      cable_ready (= 5.0.0.pre8)
-      nokogiri
-      rack
-      railties (>= 5.2)
-      redis
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -98,6 +72,14 @@ GEM
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cable_ready (5.0.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      thread-local (>= 1.1.0)
     capybara (3.36.0)
       addressable
       matrix
@@ -212,6 +194,16 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
+    stimulus_reflex (3.5.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activesupport (>= 5.2)
+      cable_ready (>= 5.0.0.pre9)
+      nokogiri
+      rack
+      railties (>= 5.2)
+      redis
     strscan (3.0.1)
     thor (1.2.1)
     thread-local (1.1.0)
@@ -242,7 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  cable_ready!
+  cable_ready (= 5.0.0.pre9)
   capybara
   debug
   importmap-rails
@@ -254,7 +246,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
-  stimulus_reflex!
+  stimulus_reflex (= 3.5.0.pre9)
   turbo-rails
   tzinfo-data
   web-console
