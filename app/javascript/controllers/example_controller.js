@@ -7,7 +7,7 @@ export default class extends ApplicationController {
     console.log("connect")
   }
 
-  beforeReflex() {
+  beforePoke() {
     console.log("before poke...")
   }
 }
