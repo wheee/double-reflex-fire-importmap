@@ -10,3 +10,10 @@ application.consumer = consumer
 window.Stimulus      = application
 
 export { application }
+
+const originalWebSocketClose = WebSocket.prototype.close
+WebSocket.prototype.close = function () {
+  if (this.readyState != WebSocket.CONNECTING) {
+    originalWebSocketClose.apply(this, arguments)
+  }
+}
